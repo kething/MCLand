@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # The code for changing pages was derived from: http://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter
-# License: http://creativecommons.org/licenses/by-sa/3.0/    
+# License: MCLand is licensed under the GNU General Public License v2.0  
 
 # The load SBML model file and converting SBML model to ODE model code was adapted from Frank Bergmann's Python code posted on sbml-discuss@googlegroups.com
 # posted date: 20/10/2016 and the url is https://groups.google.com/forum/#!topic/sbml-discuss/inS4Lzp3Ri8
@@ -3769,14 +3769,14 @@ class InfoPage(tk.Frame):
         labelCitationInfo.pack(pady=5)
  
         # About the license 
-        labelMCLandLicenseName = tk.Label(self, text="MCLand is licensed under the CC BY-NC-SA.", font="Verdana 10 bold", justify=tk.LEFT)
+        labelMCLandLicenseName = tk.Label(self, text="MCLand is licensed under the GNU General Public License v2.0", font="Verdana 10 bold", justify=tk.LEFT)
         labelMCLandLicenseName.pack(pady=5)        
         labelMCLandLicense = tk.Label(self, text="About the License", font="Verdana 10 bold", justify=tk.LEFT)
         labelMCLandLicense.pack(pady=5)
         
-        labelLicenseInfo = tk.Label(self, text="Attribution-NonCommercial-ShareAlike\nCC BY-NC-SA", font="Verdana 10 bold", justify=tk.LEFT)
+        labelLicenseInfo = tk.Label(self, text="GNU General Public License v2.0", font="Verdana 10 bold", justify=tk.LEFT)
         labelLicenseInfo.pack(pady=2)
-        labelLicenseInfo2=tk.Label(self, text="This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.\n(source https://creativecommons.org/licenses/)", justify=tk.LEFT)
+        labelLicenseInfo2=tk.Label(self, text="The GNU GPL is the most widely used free software license and has a strong copyleft requirement.\nWhen distributing derived works, the source code of the work must be made available under the same license.\nThere are multiple variants of the GNU GPL, each with different requirements.", justify=tk.LEFT)
         labelLicenseInfo2.pack(pady=2)
         
         status_bar_label = tk.Label(self, text="Start with loading an ode or a SBML model.", bd=1, relief=tk.SUNKEN, anchor=tk.W)
